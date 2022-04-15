@@ -54,7 +54,7 @@ let dangerWatcher = false
 
 getById('text-cifrable').addEventListener('input',(e)=>{
     console.log('change')
-    if(e.target.value.includes('#')){
+    if((/[^a-zA-Z ]+/g).test(e.target.value)){
         e.target.classList.add('danger')
         dangerWatcher=true
         buttons.forEach(e=>e.setAttribute('disabled', true))
