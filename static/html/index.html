@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/stylesprefixed.css">
+    <script src="../js/servicereg.js"></script>
+    <title>Alura Cifrado C1</title>
+
+</head>
+<body>
+    <div id="wrapper">
+    <header>
+        <object data="../assets/logo.svg"></object>            
+    </header>
+    <main class="flex">
+        <section class="container flex flex-column">
+            <textarea 
+                class="container__input" 
+                name="text-cifrable" 
+                id="text-cifrable" 
+                cols="30" 
+                rows="10"
+                placeholder="Ingrese texto aqui"
+            ></textarea>
+
+            <p>
+                <object data="../assets/importan.svg"></object>
+                Solo letras minisculas y mayusculas
+            </p>
+            <div class="container__buttons flex flex-row">
+                <button id="cifrar" class="container__buttons_alura">Encriptar</button>
+                <button id="descifrar" class="container__buttons_alura">Desencriptar</button>
+            </div>
+        </section>
+        <section class="container card">
+            <div class="there-is-text hidden">
+
+                <p id="text-result" class="container__text"></p>
+                <div class="container__buttons flex">
+
+                    <button id="copiar" class="container__buttons_alura">Copiar</button>
+                </div>
+
+            </div>
+            <div class="there-is-not-text flex flex-column">
+                <object id="munieco" data="../assets/munieco.svg" ></object>
+                <div>   
+                    <p><strong>Ningun mensaje fue encontrado</strong></p>
+                    <p>Ingresa el mensaje que deseas encriptar</p>
+                </div> 
+            </div>
+        </section>
+
+    </main>
+    <div id="pop-up" class="hidden">copiado</div>
+    </div>
+    <footer>
+        Piero Ramirez 2022 
+    </footer>
+    <script src="../js/eventListeners.js" type="module"></script>
+</body>
+</html>
