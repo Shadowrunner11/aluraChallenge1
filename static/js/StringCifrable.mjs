@@ -27,7 +27,7 @@ class StringCifrable extends String{
     }
 
     cifrarConDictPorFrase(dict){
-        let newString
+        let newString = void(0)
 
         for (const key in dict) {
             if (Object.hasOwnProperty.call(dict, key)) {
